@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* borderbox ayuda a que cuando se ponga padding y margin no se */
+
+.title{
+    background-color: #e5e5e5;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #aaaaaa;
+
+}
+
+.container{
+    display: flex;
+}
+
+.menu{
+    width: 20%;
+}
+
+.menu a{
+    background-color: #e5e5e5;
+    display: block;
+    padding: 8px;
+    margin-top: 7px;
+}
+
+
+.main{
+    width: 60%;
+    padding:  0 20px;
+}
+
+.about{
+    width: 20%;
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 15px;
+}
+
+.copyright{
+    background-color: #e5e5e5;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* @media screen es para pantallas tipo tablets */
+@media screen and (max-width :800px){
+    h1{
+        color: #15f;
+    }
+}
+
+/* estilos para telefono */
+
+@media screen and (max-width :600px){
+    .container{
+        flex-direction: column;
+    }
+
+    .container div{
+        width: 100%;
+    }
+}
